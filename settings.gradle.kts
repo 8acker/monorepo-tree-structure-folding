@@ -1,0 +1,1 @@
+rootProject.name = "monorepo-tree-structure-folding"

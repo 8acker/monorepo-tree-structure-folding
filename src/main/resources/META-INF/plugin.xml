@@ -1,0 +1,14 @@
+<idea-plugin>
+    <id>com.8ackerbird.intellij.plugins</id>
+    <name>Monorepo Tree Structure Folding</name>
+    <vendor>8ackerbird</vendor>
+    <description>Monorepo Tree Structure Folding</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <treeStructureProvider implementation="com.eightackerbird.intellij.plugins.monorepo.structurefolding.CustomTreeStructureProvider" />
+        <projectConfigurable instance="com.eightackerbird.intellij.plugins.monorepo.structurefolding.PluginSettings" displayName="Monorepo Tree Structure Folding"/>
+        <projectService serviceImplementation="com.eightackerbird.intellij.plugins.monorepo.structurefolding.PluginSettingsState"/>
+    </extensions>
+</idea-plugin>
